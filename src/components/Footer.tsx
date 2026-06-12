@@ -1,0 +1,195 @@
+"use client";
+
+import { FaInstagram, FaFacebookF, FaYoutube, FaPlus, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
+const quickLinks = [
+  { label: "Home", href: "#hero" },
+  { label: "About Doctor", href: "#about" },
+  { label: "Treatments", href: "#treatments" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#contact" },
+];
+
+const treatmentLinks = [
+  "Thyroid",
+  "PCOD / PCOS",
+  "Hair Loss",
+  "Skin Disorders",
+  "Migraine",
+  "Allergies",
+];
+
+const socialLinks = [
+  {
+    icon: <FaInstagram className="text-lg" />,
+    href: "https://instagram.com",
+    label: "Instagram",
+  },
+  {
+    icon: <FaFacebookF className="text-lg" />,
+    href: "https://facebook.com",
+    label: "Facebook",
+  },
+  {
+    icon: <FaYoutube className="text-lg" />,
+    href: "https://youtube.com",
+    label: "YouTube",
+  },
+];
+
+export default function Footer() {
+  return (
+    <footer className="relative bg-slate-900 text-white">
+      {/* Gradient Accent Line */}
+      <div
+        className="h-0.5 w-full bg-gradient-to-r from-primary via-accent to-primary"
+        aria-hidden="true"
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          {/* Column 1: Clinic Info */}
+          <div className="sm:col-span-2 lg:col-span-1 space-y-4">
+            <a href="#hero" className="flex items-center gap-2 group" aria-label="Home">
+              <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center group-hover:bg-primary-dark transition-colors">
+                <FaPlus className="text-white text-sm" />
+              </div>
+              <span className="font-serif text-xl font-bold text-white">
+                Dr. Wad&apos;s Synergy
+              </span>
+            </a>
+            <p className="font-serif text-lg text-gray-300 italic">
+              Gentle Healing. Lasting Results.
+            </p>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Trusted homoeopathic care for families across Pune. Personalized,
+              evidence-based treatments for chronic and acute conditions.
+            </p>
+          </div>
+
+          {/* Column 2: Quick Links */}
+          <div>
+            <h3 className="text-white font-semibold text-base mb-5">
+              Quick Links
+            </h3>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-gray-400 hover:text-primary text-sm transition-colors duration-200"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Treatments */}
+          <div>
+            <h3 className="text-white font-semibold text-base mb-5">
+              Treatments
+            </h3>
+            <ul className="space-y-3">
+              {treatmentLinks.map((treatment) => (
+                <li key={treatment}>
+                  <a
+                    href="#treatments"
+                    className="text-gray-400 hover:text-primary text-sm transition-colors duration-200"
+                  >
+                    {treatment}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Connect */}
+          <div>
+            <h3 className="text-white font-semibold text-base mb-5">
+              Connect
+            </h3>
+            <ul className="space-y-4">
+              <li>
+                <a
+                  href="tel:+919XXXXXXXXX"
+                  className="flex items-center gap-3 text-gray-400 hover:text-primary text-sm transition-colors duration-200"
+                >
+                  <FaPhone className="text-primary text-sm flex-shrink-0" />
+                  +91 9XXXXXXXXX
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@drwadclinic.com"
+                  className="flex items-center gap-3 text-gray-400 hover:text-primary text-sm transition-colors duration-200"
+                >
+                  <FaEnvelope className="text-primary text-sm flex-shrink-0" />
+                  info@drwadclinic.com
+                </a>
+              </li>
+              <li>
+                <div className="flex items-start gap-3 text-gray-400 text-sm">
+                  <FaMapMarkerAlt className="text-primary text-sm flex-shrink-0 mt-0.5" />
+                  <span>Rahatani, Pune 411017</span>
+                </div>
+              </li>
+            </ul>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 mt-6">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-all duration-200"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-gray-500 text-sm text-center md:text-left">
+              © 2026 Dr. Wad&apos;s Synergy Homoeopathic Clinic. All rights
+              reserved.
+            </p>
+            <div className="flex items-center gap-4 text-sm">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-300 transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <span className="text-gray-700">|</span>
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-300 transition-colors"
+              >
+                Terms
+              </a>
+              <span className="text-gray-700">|</span>
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-300 transition-colors"
+              >
+                Sitemap
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
