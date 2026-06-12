@@ -129,9 +129,9 @@ export default function Hero() {
             <div className="relative w-72 h-72 md:w-96 md:h-96">
               <div className="blob w-full h-full bg-gradient-to-br from-primary to-accent opacity-90 flex items-center justify-center">
                 {/* Doctor Placeholder */}
-                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl flex items-center justify-center">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl">
                   <Image
-                    src="/dr-wad.png"
+                    src="/doctor_portrait_hd_400dpi.jpg"
                     alt="Dr. Aditi Wad"
                     fill
                     className="object-cover"

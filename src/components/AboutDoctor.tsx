@@ -60,7 +60,7 @@ export default function AboutDoctor() {
             {/* Image placeholder */}
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-gradient-to-br from-primary-light to-surface">
               <Image
-                src="/dr-wad.png"
+                src="/doctor_portrait_hd_400dpi.jpg"
                 alt="Dr. Aditi A. Wad"
                 fill
                 className="object-cover"
