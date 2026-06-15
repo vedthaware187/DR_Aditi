@@ -26,7 +26,7 @@ const steps: Step[] = [
     title: "Deep Understanding",
     subtitle: "Your First Consultation (45-60 min)",
     description:
-      "Dr. Wad spends quality time understanding your complete health picture — physical symptoms, emotional patterns, lifestyle, and medical history.",
+      "Dr. Wad spends quality time understanding your complete health picture physical symptoms, emotional patterns, lifestyle, and medical history.",
   },
   {
     number: 2,
@@ -34,7 +34,7 @@ const steps: Step[] = [
     title: "Personalized Treatment Plan",
     subtitle: "Designed for You",
     description:
-      "A custom protocol including constitutional medicine, dietary guidance, and lifestyle modifications — with a clear timeline and realistic expectations.",
+      "A custom protocol including constitutional medicine, dietary guidance, and lifestyle modifications with a clear timeline and realistic expectations.",
   },
   {
     number: 3,
@@ -50,7 +50,7 @@ const steps: Step[] = [
     title: "Lasting Wellness",
     subtitle: "Beyond Symptom Relief",
     description:
-      "Our ultimate goal is to strengthen your body so it stays healthy. When you no longer need us — that's our greatest success.",
+      "Our ultimate goal is to strengthen your body so it stays healthy. When you no longer need us that's our greatest success.",
   },
 ];
 
@@ -80,13 +80,13 @@ function TimelineCard({
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <step.icon className="text-lg text-primary" />
               </div>
-              <h3 className="font-serif text-xl font-bold text-slate-900">
+              <h3 className="font-serif text-xl font-bold text-primary-dark">
                 {step.title}
               </h3>
-              <p className="mt-1 text-sm font-semibold text-primary">
+              <p className="mt-1 text-sm font-semibold text-primary text-justify">
                 {step.subtitle}
               </p>
-              <p className="mt-3 leading-relaxed text-text-secondary">
+              <p className="mt-3 leading-relaxed text-text-secondary text-justify">
                 {step.description}
               </p>
             </motion.div>
@@ -124,13 +124,13 @@ function TimelineCard({
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <step.icon className="text-lg text-primary" />
               </div>
-              <h3 className="font-serif text-xl font-bold text-slate-900">
+              <h3 className="font-serif text-xl font-bold text-primary-dark">
                 {step.title}
               </h3>
-              <p className="mt-1 text-sm font-semibold text-primary">
+              <p className="mt-1 text-sm font-semibold text-primary text-justify">
                 {step.subtitle}
               </p>
-              <p className="mt-3 leading-relaxed text-text-secondary">
+              <p className="mt-3 leading-relaxed text-text-secondary text-justify">
                 {step.description}
               </p>
             </motion.div>
@@ -140,7 +140,7 @@ function TimelineCard({
         </div>
       </div>
 
-      {/* Mobile layout — timeline on left, cards on right */}
+      {/* Mobile layout timeline on left, cards on right */}
       <div className="flex w-full items-start gap-6 lg:hidden">
         {/* Number circle */}
         <motion.div
@@ -169,13 +169,13 @@ function TimelineCard({
           <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-primary/10">
             <step.icon className="text-base text-primary" />
           </div>
-          <h3 className="font-serif text-lg font-bold text-slate-900">
+          <h3 className="font-serif text-lg font-bold text-primary-dark">
             {step.title}
           </h3>
-          <p className="mt-1 text-sm font-semibold text-primary">
+          <p className="mt-1 text-sm font-semibold text-primary text-justify">
             {step.subtitle}
           </p>
-          <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+          <p className="mt-2 text-sm leading-relaxed text-text-secondary text-justify">
             {step.description}
           </p>
         </motion.div>
@@ -205,12 +205,12 @@ export default function TreatmentProcess() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-primary-dark sm:text-4xl lg:text-5xl">
             Your <span className="gradient-text">Healing Journey</span>
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-primary" />
-          <p className="mt-6 text-lg leading-relaxed text-text-secondary">
-            Treatment at Synergy Clinic is not a prescription — it&apos;s a
+          <p className="mt-6 text-lg leading-relaxed text-text-secondary text-justify">
+            Treatment at Synergy Clinic is not a prescription it&apos;s a
             partnership.
           </p>
         </motion.div>
@@ -249,11 +249,11 @@ export default function TreatmentProcess() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="mb-6 font-serif text-xl text-slate-900 sm:text-2xl">
+          <p className="mb-6 font-serif text-xl text-primary-dark sm:text-2xl text-justify">
             Start Your Healing Journey
           </p>
           <a
-            href="https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad%2C%20I%20would%20like%20to%20book%20my%20first%20consultation."
+            href="https://wa.me/917798756622?text=Hi%20Dr.%20Wad%2C%20I%20would%20like%20to%20book%20my%20first%20consultation."
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Book your first consultation via WhatsApp"

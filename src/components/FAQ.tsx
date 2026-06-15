@@ -11,22 +11,22 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
   {
-    question: "Is homoeopathy scientifically proven?",
+    question: "Is Homoeopathy scientifically proven?",
     answer:
       "Homoeopathy has been practiced for over 200 years and is recognized by the Indian government under AYUSH. Dr. Wad holds an MD in Homoeopathy \u2014 a rigorous postgraduate medical degree \u2014 and a PGDCR, ensuring evidence-informed practice. Thousands of clinical studies and millions of successful cases support its effectiveness.",
   },
   {
-    question: "How long does homoeopathic treatment take?",
+    question: "How long does Homoeopathic treatment take?",
     answer:
       "It depends on the condition. Acute issues (cold, fever) resolve in 1\u20133 days. Recent chronic conditions (under 1 year) take 3\u20136 months. Long-standing chronic conditions may take 6\u201318 months. Dr. Wad will give you a realistic timeline at your first consultation.",
   },
   {
-    question: "Can I take homoeopathy with my current medication?",
+    question: "Can I take Homoeopathy with my current medication?",
     answer:
-      "Yes, absolutely. Homoeopathic medicines don\u2019t interfere with allopathic medications. Many patients start homoeopathy alongside conventional treatment and gradually reduce allopathic dosage under medical supervision.",
+      "Yes, absolutely. Homoeopathic medicines don\u2019t interfere with allopathic medications. Many patients start Homoeopathy alongside conventional treatment and gradually reduce allopathic dosage under medical supervision.",
   },
   {
-    question: "Is homoeopathy safe for children and pregnant women?",
+    question: "Is Homoeopathy safe for children and pregnant women?",
     answer:
       "Yes. Homoeopathic medicines are natural, highly diluted, and free of toxic side effects. They\u2019re safe for newborns, children, pregnant women, breastfeeding mothers, and elderly patients.",
   },
@@ -46,7 +46,7 @@ const faqItems: FAQItem[] = [
       "Follow-ups are every 3\u20136 weeks, either in-person at our Rahatani clinic or via WhatsApp for minor updates. This flexibility ensures treatment stays on track even if you\u2019re busy or traveling.",
   },
   {
-    question: "What if homoeopathy doesn\u2019t work for me?",
+    question: "What if Homoeopathy doesn\u2019t work for me?",
     answer:
       "Dr. Wad is transparent. If she assesses that your condition requires conventional intervention, she\u2019ll tell you honestly and refer you appropriately. Your health always comes first.",
   },
@@ -98,11 +98,11 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-dark mb-4">
             Frequently Asked{" "}
             <span className="gradient-text">Questions</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto text-justify">
             Honest answers to the questions we hear most often.
           </p>
         </motion.div>
@@ -159,7 +159,7 @@ export default function FAQ() {
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className="overflow-hidden"
                     >
-                      <p className="px-6 pb-6 text-text-secondary leading-relaxed">
+                      <p className="px-6 pb-6 text-text-secondary leading-relaxed text-justify">
                         {item.answer}
                       </p>
                     </motion.div>

@@ -22,7 +22,7 @@ const benefits: Benefit[] = [
     icon: FaShieldAlt,
     title: "No Side Effects",
     description:
-      "Homoeopathic medicines are natural, non-toxic, and non-addictive. Safe for infants, pregnant women, and the elderly.",
+      "Homoeopathic medicines are natural, non-toxic, and non-addictive. Safe for infants and the elderly.",
   },
   {
     icon: FaSearch,
@@ -34,7 +34,7 @@ const benefits: Benefit[] = [
     icon: FaChild,
     title: "Safe for All Ages",
     description:
-      "From newborns to senior citizens — gentle medicine that works without compromising safety at any stage of life.",
+      "From newborns to senior citizens gentle medicine that works without compromising safety at any stage of life.",
   },
   {
     icon: FaFingerprint,
@@ -46,7 +46,7 @@ const benefits: Benefit[] = [
     icon: FaClipboardCheck,
     title: "Treats Chronic Conditions",
     description:
-      "Especially effective for conditions that conventional medicine struggles with — PCOD, thyroid, skin, allergies & more.",
+      "Especially effective for conditions that conventional medicine struggles with PCOD, thyroid, skin, allergies & more.",
   },
   {
     icon: FaUsers,
@@ -77,7 +77,7 @@ const cardVariants = {
 export default function WhyHomeopathy() {
   return (
     <section
-      id="why-homeopathy"
+      id="why-Homeopathy"
       className="section-padding bg-gradient-to-b from-white to-surface"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -89,12 +89,12 @@ export default function WhyHomeopathy() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-primary-dark sm:text-4xl lg:text-5xl">
             Why Choose{" "}
             <span className="gradient-text">Homoeopathic Treatment?</span>
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-primary" />
-          <p className="mt-6 text-lg leading-relaxed text-text-secondary">
+          <p className="mt-6 text-lg leading-relaxed text-text-secondary text-justify">
             A 200-year-old science backed by millions of successful cases
             worldwide.
           </p>
@@ -120,12 +120,12 @@ export default function WhyHomeopathy() {
               </div>
 
               {/* Title */}
-              <h3 className="mt-4 text-xl font-semibold text-slate-900">
+              <h3 className="mt-4 text-xl font-semibold text-primary-dark">
                 {benefit.title}
               </h3>
 
               {/* Description */}
-              <p className="mt-2 leading-relaxed text-text-secondary">
+              <p className="mt-2 leading-relaxed text-text-secondary text-justify">
                 {benefit.description}
               </p>
             </motion.div>
@@ -141,10 +141,10 @@ export default function WhyHomeopathy() {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <a
-            href="https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad%2C%20I%20want%20to%20explore%20homoeopathic%20treatment."
+            href="https://wa.me/917798756622?text=Hi%20Dr.%20Wad%2C%20I%20want%20to%20explore%20homoeopathic%20treatment."
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Explore homoeopathic treatment via WhatsApp"
+            aria-label="Explore Homoeopathic treatment via WhatsApp"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-dark hover:shadow-xl hover:shadow-primary/30"
           >
             Explore Treatment Options

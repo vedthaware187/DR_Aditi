@@ -1,6 +1,7 @@
 "use client";
 
-import { FaInstagram, FaFacebookF, FaYoutube, FaPlus, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaYoutube, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "#hero" },
@@ -52,18 +53,24 @@ export default function Footer() {
           {/* Column 1: Clinic Info */}
           <div className="sm:col-span-2 lg:col-span-1 space-y-4">
             <a href="#hero" className="flex items-center gap-2 group" aria-label="Home">
-              <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center group-hover:bg-primary-dark transition-colors">
-                <FaPlus className="text-white text-sm" />
+              <div className="relative w-10 h-10 flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Dr Wad's synergy Homeopathy clinic Logo"
+                  fill
+                  className="object-contain"
+                  sizes="40px"
+                />
               </div>
               <span className="font-serif text-xl font-bold text-white">
-                Dr. Wad&apos;s Synergy
+                Dr Wad&apos;s synergy Homeopathy clinic
               </span>
             </a>
-            <p className="font-serif text-lg text-gray-300 italic">
+            <p className="font-serif text-lg text-gray-300 italic text-justify">
               Gentle Healing. Lasting Results.
             </p>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Trusted homoeopathic care for families across Pune. Personalized,
+            <p className="text-gray-400 text-sm leading-relaxed text-justify">
+              Trusted Homoeopathic care for families across Pune. Personalized,
               evidence-based treatments for chronic and acute conditions.
             </p>
           </div>
@@ -114,26 +121,26 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+919XXXXXXXXX"
+                  href="tel:+917798756622"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary text-sm transition-colors duration-200"
                 >
                   <FaPhone className="text-primary text-sm flex-shrink-0" />
-                  +91 9XXXXXXXXX
+                  +91 77987 56622
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@drwadclinic.com"
+                  href="mailto:draditiwad@gmail.com"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary text-sm transition-colors duration-200"
                 >
                   <FaEnvelope className="text-primary text-sm flex-shrink-0" />
-                  info@drwadclinic.com
+                  draditiwad@gmail.com
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-gray-400 text-sm">
                   <FaMapMarkerAlt className="text-primary text-sm flex-shrink-0 mt-0.5" />
-                  <span>Rahatani, Pune 411017</span>
+                  <span>Fortuna Business Center, Office 707, 7th Floor, Rahatani Road, Kokane Chowk, Near Shivar Chowk, Above Hotel Radhakrishna, Pimple Saudagar, Maharashtra 411027</span>
                 </div>
               </li>
             </ul>
@@ -161,8 +168,8 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm text-center md:text-left">
-              © 2026 Dr. Wad&apos;s Synergy Homoeopathic Clinic. All rights
+            <p className="text-gray-500 text-sm text-center md:text-left text-justify">
+              © 2026 Dr Wad&apos;s synergy Homeopathy clinic. All rights
               reserved.
             </p>
             <div className="flex items-center gap-4 text-sm">

@@ -12,9 +12,9 @@ import {
 } from "react-icons/fa";
 
 const WHATSAPP_LINK =
-  "https://wa.me/919XXXXXXXXX?text=Hello%20Dr.%20Wad%2C%20I%20would%20like%20to%20book%20an%20appointment.";
+  "https://wa.me/917798756622?text=Hello%20Dr.%20Wad%2C%20I%20would%20like%20to%20book%20an%20appointment.";
 
-const PHONE_NUMBER = "+91 9XXXXXXXXX";
+const PHONE_NUMBER = "+91 77987 56622";
 
 const CONDITIONS = [
   "Thyroid",
@@ -120,8 +120,24 @@ export default function AppointmentForm() {
     setErrors({});
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Format WhatsApp message
+    const messageLines = [
+      "Hello Dr. Wad, I would like to book an appointment.",
+      "",
+      `*Name:* ${formData.name}`,
+      `*Phone:* ${formData.phone}`,
+      formData.email ? `*Email:* ${formData.email}` : "",
+      `*Condition:* ${formData.condition}`,
+      `*Preferred Date:* ${formData.date}`,
+      `*Preferred Time:* ${getTimeLabelForValue(formData.time)}`,
+      formData.message ? `*Message:* ${formData.message}` : ""
+    ].filter(Boolean).join("\\n");
+
+    const whatsappUrl = `https://wa.me/917798756622?text=${encodeURIComponent(messageLines)}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, "_blank");
+
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
@@ -154,11 +170,11 @@ export default function AppointmentForm() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-dark mb-4">
             Book Your{" "}
             <span className="gradient-text">Appointment</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto text-justify">
             Take the first step toward lasting health. We&apos;ll confirm your
             appointment within 30 minutes.
           </p>
@@ -166,7 +182,7 @@ export default function AppointmentForm() {
 
         {/* Two-column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
-          {/* Left - Form (60%) */}
+          {/* Left Form (60%) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -433,17 +449,17 @@ export default function AppointmentForm() {
                       <FaCheckCircle className="w-10 h-10 text-green-500" />
                     </motion.div>
 
-                    <h3 className="font-serif text-2xl font-bold text-foreground mb-2">
+                    <h3 className="font-serif text-2xl font-bold text-primary-dark mb-2">
                       Appointment Request Submitted!
                     </h3>
-                    <p className="text-text-secondary mb-8 max-w-md mx-auto">
+                    <p className="text-text-secondary mb-8 max-w-md mx-auto text-justify">
                       We&apos;ll confirm your appointment via phone/WhatsApp
                       within 30 minutes.
                     </p>
 
                     {/* Submission Summary */}
                     <div className="bg-surface rounded-xl p-6 max-w-sm mx-auto mb-8 text-left">
-                      <h4 className="font-semibold text-foreground mb-3">
+                      <h4 className="font-semibold text-primary-dark mb-3">
                         Booking Details
                       </h4>
                       <div className="space-y-2 text-sm">
@@ -489,7 +505,7 @@ export default function AppointmentForm() {
             </div>
           </motion.div>
 
-          {/* Right - Info Card (40%) */}
+          {/* Right Info Card (40%) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -502,7 +518,7 @@ export default function AppointmentForm() {
               <h3 className="font-serif text-2xl font-bold mb-3">
                 Quick Booking?
               </h3>
-              <p className="text-white/80 mb-5 leading-relaxed">
+              <p className="text-white/80 mb-5 leading-relaxed text-justify">
                 Prefer WhatsApp? Send us a message and we&apos;ll book your
                 appointment instantly.
               </p>
@@ -521,7 +537,7 @@ export default function AppointmentForm() {
               <hr className="border-white/20 my-6" />
 
               {/* Call */}
-              <p className="text-white/70 text-sm mb-3">
+              <p className="text-white/70 text-sm mb-3 text-justify">
                 Or call us directly:
               </p>
               <a

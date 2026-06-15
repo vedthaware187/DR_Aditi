@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaWhatsapp, FaPhone, FaCalendarAlt } from "react-icons/fa";
 
 const WHATSAPP_URL =
-  "https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad!%20I%27d%20like%20to%20book%20an%20appointment.";
-const PHONE_URL = "tel:+919XXXXXXXXX";
+  "https://wa.me/917798756622?text=Hi%20Dr.%20Wad!%20I%27d%20like%20to%20book%20an%20appointment.";
+const PHONE_URL = "tel:+917798756622";
 
 export default function StickyButtons() {
   const [visible, setVisible] = useState(false);
@@ -26,7 +26,7 @@ export default function StickyButtons() {
       <AnimatePresence>
         {visible && (
           <>
-            {/* WhatsApp Button - Bottom Right */}
+            {/* WhatsApp Button Bottom Right */}
             <motion.a
               href={WHATSAPP_URL}
               target="_blank"
@@ -46,7 +46,7 @@ export default function StickyButtons() {
               </span>
             </motion.a>
 
-            {/* Phone Button - Bottom Left */}
+            {/* Phone Button Bottom Left */}
             <motion.a
               href={PHONE_URL}
               initial={{ opacity: 0, y: 40, scale: 0.8 }}

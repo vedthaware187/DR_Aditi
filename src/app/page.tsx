@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import AboutDoctor from "@/components/AboutDoctor";
+import DoctorGallery from "@/components/DoctorGallery";
 import ConditionsWeTreat from "@/components/ConditionsWeTreat";
 import WhyHomeopathy from "@/components/WhyHomeopathy";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <Stats />
         <AboutDoctor />
+        <DoctorGallery />
         <ConditionsWeTreat />
         <WhyHomeopathy />
         <WhyChooseUs />

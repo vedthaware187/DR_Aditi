@@ -18,40 +18,40 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://drwadclinic.com"),
   title: {
     default:
-      "Dr. Wad's Synergy Homoeopathic Clinic | Best Homeopathic Doctor in Rahatani, Pune",
-    template: "%s | Dr. Wad's Synergy Homoeopathic Clinic",
+      "Dr Wad's synergy Homeopathy clinic | Best Homeopathic Doctor in Rahatani, Pune",
+    template: "%s | Dr Wad's synergy Homeopathy clinic",
   },
   description:
-    "Dr. Aditi A. Wad (BHMS, MD Hom, PGDCR) — Expert homoeopathic treatment for PCOD, thyroid, skin, hair loss, migraine & more in Rahatani, Pune. Book your appointment today.",
+    "Dr. Aditi A. Wad (BHMS, MD Hom, PGDCR) Expert Homoeopathic treatment for PCOD, thyroid, skin, hair loss, migraine & more in Rahatani, Pune. Book your appointment today.",
   keywords: [
-    "best homeopathic doctor in Rahatani Pune",
-    "homeopathy clinic Pune",
+    "best Homeopathic doctor in Rahatani Pune",
+    "Homeopathy clinic Pune",
     "PCOD treatment Pune",
     "hair fall treatment Pune",
     "thyroid treatment Pune",
-    "skin specialist homoeopathy Pune",
+    "skin specialist Homoeopathy Pune",
     "Dr Aditi Wad",
-    "homoeopathic doctor near me",
-    "homeopathy Rahatani",
-    "PCOS homoeopathy Pune",
+    "Homoeopathic doctor near me",
+    "Homeopathy Rahatani",
+    "PCOS Homoeopathy Pune",
   ],
   authors: [{ name: "Dr. Aditi A. Wad" }],
-  creator: "Dr. Wad's Synergy Homoeopathic Clinic",
+  creator: "Dr Wad's synergy Homeopathy clinic",
   openGraph: {
     title:
-      "Dr. Wad's Synergy Homoeopathic Clinic | Best Homeopathic Doctor in Rahatani, Pune",
+      "Dr Wad's synergy Homeopathy clinic | Best Homeopathic Doctor in Rahatani, Pune",
     description:
-      "Expert homoeopathic treatment for PCOD, thyroid, skin, hair loss & more. 2000+ patients treated. Book your appointment today.",
+      "Expert Homoeopathic treatment for PCOD, thyroid, skin, hair loss & more. 2000+ patients treated. Book your appointment today.",
     url: "https://drwadclinic.com",
-    siteName: "Dr. Wad's Synergy Homoeopathic Clinic",
+    siteName: "Dr Wad's synergy Homeopathy clinic",
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Wad's Synergy Homoeopathic Clinic",
+    title: "Dr Wad's synergy Homeopathy clinic",
     description:
-      "Expert homoeopathic treatment in Rahatani, Pune. PCOD, thyroid, skin, hair loss & more.",
+      "Expert Homoeopathic treatment in Rahatani, Pune. PCOD, thyroid, skin, hair loss & more.",
   },
   robots: {
     index: true,
@@ -72,10 +72,10 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
-  name: "Dr. Wad's Synergy Homoeopathic Clinic",
+  name: "Dr Wad's synergy Homeopathy clinic",
   image: "https://drwadclinic.com/images/clinic.jpg",
   url: "https://drwadclinic.com",
-  telephone: "+919XXXXXXXXX",
+  telephone: "+917798756622",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Rahatani",
@@ -127,10 +127,10 @@ const doctorSchema = {
   name: "Dr. Aditi A. Wad",
   image: "https://drwadclinic.com/images/dr-wad.jpg",
   url: "https://drwadclinic.com",
-  telephone: "+919XXXXXXXXX",
+  telephone: "+917798756622",
   jobTitle: "Homoeopathic Physician",
   description:
-    "Dr. Aditi A. Wad (BHMS, MD Hom, PGDCR) is a leading homoeopathic doctor in Rahatani, Pune specializing in PCOD, thyroid, skin, hair loss and chronic conditions.",
+    "Dr. Aditi A. Wad (BHMS, MD Hom, PGDCR) is a leading Homoeopathic doctor in Rahatani, Pune specializing in PCOD, thyroid, skin, hair loss and chronic conditions.",
   medicalSpecialty: "Homeopathic",
   address: {
     "@type": "PostalAddress",
@@ -161,6 +161,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -178,7 +179,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }

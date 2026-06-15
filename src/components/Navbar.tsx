@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
-import { FaPlus } from "react-icons/fa";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
@@ -57,14 +57,20 @@ export default function Navbar() {
             <a
               href="#hero"
               className="flex items-center gap-2 group"
-              aria-label="Dr. Wad's Synergy - Home"
+              aria-label="Dr Wad's synergy Homeopathy clinic Home"
             >
-              <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center group-hover:bg-primary-dark transition-colors">
-                <FaPlus className="text-white text-sm" />
+              <div className="relative w-10 h-10 flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Dr Wad's synergy Homeopathy clinic Logo"
+                  fill
+                  className="object-contain"
+                  sizes="40px"
+                  priority
+                />
               </div>
               <span className="font-serif text-xl font-bold text-foreground">
-                Dr. Wad&apos;s{" "}
-                <span className="gradient-text">Synergy</span>
+                Dr Wad&apos;s <span className="gradient-text">synergy Homeopathy clinic</span>
               </span>
             </a>
 

@@ -24,57 +24,63 @@ const conditions: Condition[] = [
   {
     icon: FaHeartbeat,
     title: "Thyroid Disorders",
-    description:
-      "Hypothyroidism, hyperthyroidism & Hashimoto's — restore thyroid balance naturally.",
+    description: "Hypothyroidism, Hyperthyroidism & Hashimoto's restore thyroid balance naturally.",
   },
   {
     icon: FaFemale,
     title: "PCOD / PCOS",
-    description:
-      "Regulate cycles, balance hormones & manage PCOD without birth control pills.",
+    description: "Regulate cycles, balance hormones & manage PCOD without birth control pills.",
   },
   {
     icon: FaCut,
     title: "Hair Loss",
-    description:
-      "Treat the root cause of hair fall — thyroid, PCOD, stress or nutritional gaps.",
+    description: "Treat the root cause of hair fall thyroid, PCOD, stress or nutritional gaps.",
   },
   {
     icon: FaHandHoldingHeart,
     title: "Skin Disorders",
-    description:
-      "Eczema, psoriasis, acne & vitiligo — heal your skin from the inside out.",
+    description: "Eczema, Psoriasis, Acne & Vitiligo heal your skin from the inside out.",
   },
   {
     icon: FaWind,
     title: "Allergies",
-    description:
-      "Stop managing allergies. Retrain your immune system to respond normally.",
+    description: "Stop managing allergies. Retrain your immune system to respond normally.",
   },
   {
     icon: GiLungs,
     title: "Respiratory",
-    description:
-      "Asthma, bronchitis, sinusitis — breathe easy without lifelong inhalers.",
+    description: "Asthma, Bronchitis, Sinusitis breathe easy without lifelong inhalers.",
   },
   {
     icon: FaBrain,
     title: "Migraine",
-    description:
-      "Reduce migraine frequency by 50-80% — address triggers, not just pain.",
+    description: "Reduce migraine frequency by 50-80% address triggers, not just pain.",
   },
   {
     icon: FaAppleAlt,
     title: "Digestive",
-    description:
-      "IBS, GERD, bloating — restore gut health and digestive comfort.",
+    description: "IBS, GERD, Bloating restore gut health and digestive comfort.",
   },
   {
     icon: FaBone,
     title: "Joint Pain",
-    description:
-      "Arthritis, spondylosis, sciatica — move without pain, live without limits.",
+    description: "Arthritis, Spondylosis, Sciatica move without pain, live without limits.",
   },
+  {
+    icon: FaFemale,
+    title: "Gynaecological Issues",
+    description: "Menstrual Irregularities, Fibroids, Menopause transition smoothly with natural care.",
+  },
+  {
+    icon: FaWind,
+    title: "Tonsillitis & Throat",
+    description: "Recurrent Tonsillitis, Pharyngitis prevent frequent throat infections.",
+  },
+  {
+    icon: FaHeartbeat,
+    title: "Long-Standing Illnesses",
+    description: "Chronic Diseases, Metabolic Issues, Immunity find deep, lasting healing.",
+  }
 ];
 
 const containerVariants = {
@@ -107,13 +113,13 @@ export default function ConditionsWeTreat() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-primary-dark sm:text-4xl lg:text-5xl">
             Conditions We Treat with{" "}
             <span className="gradient-text">Expertise</span>
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-primary" />
-          <p className="mt-6 text-lg leading-relaxed text-text-secondary">
-            Homoeopathy excels where other systems struggle — chronic conditions
+          <p className="mt-6 text-lg leading-relaxed text-text-secondary text-justify">
+            Homoeopathy excels where other systems struggle chronic conditions
             that haven&apos;t responded to conventional treatment.
           </p>
         </motion.div>
@@ -138,18 +144,18 @@ export default function ConditionsWeTreat() {
               </div>
 
               {/* Title */}
-              <h3 className="mt-4 text-xl font-semibold text-slate-900">
+              <h3 className="mt-4 text-xl font-semibold text-primary-dark">
                 {condition.title}
               </h3>
 
               {/* Description */}
-              <p className="mt-2 text-text-secondary leading-relaxed">
+              <p className="mt-2 text-text-secondary leading-relaxed text-justify">
                 {condition.description}
               </p>
 
               {/* Learn More link */}
               <a
-                href="https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad%2C%20I%20would%20like%20to%20know%20more%20about%20treatment%20for%20"
+                href="https://wa.me/917798756622?text=Hi%20Dr.%20Wad%2C%20I%20would%20like%20to%20know%20more%20about%20treatment%20for%20"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Learn more about ${condition.title} treatment`}
@@ -169,14 +175,14 @@ export default function ConditionsWeTreat() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <p className="mb-6 text-lg text-text-secondary">
+          <p className="mb-6 text-lg text-text-secondary text-justify">
             Don&apos;t see your condition?{" "}
-            <span className="font-semibold text-slate-900">
+            <span className="font-semibold text-primary-dark">
               Homoeopathy treats the person, not just the disease.
             </span>
           </p>
           <a
-            href="https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad%2C%20I%20have%20a%20question%20about%20my%20condition."
+            href="https://wa.me/917798756622?text=Hi%20Dr.%20Wad%2C%20I%20have%20a%20question%20about%20my%20condition."
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Ask about your condition via WhatsApp"

@@ -16,10 +16,6 @@ const credentials = [
     label: "MD in Homoeopathy",
   },
   {
-    icon: FaFlask,
-    label: "Clinical Research",
-  },
-  {
     icon: FaAward,
     label: "10+ Years Experience",
   },
@@ -37,7 +33,7 @@ export default function AboutDoctor() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-primary-dark sm:text-4xl lg:text-5xl">
             Meet Your Doctor
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-primary" />
@@ -63,7 +59,7 @@ export default function AboutDoctor() {
                 src="/doctor_portrait_hd_400dpi.jpg"
                 alt="Dr. Aditi A. Wad"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
               {/* Subtle overlay gradient */}
@@ -80,12 +76,12 @@ export default function AboutDoctor() {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
           >
             {/* Name */}
-            <h3 className="font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
+            <h3 className="font-serif text-2xl font-bold text-primary-dark sm:text-3xl">
               Dr. Aditi A. Wad
             </h3>
 
             {/* Credentials */}
-            <p className="mt-2 text-lg font-medium text-primary">
+            <p className="mt-2 text-lg font-medium text-primary text-justify">
               BHMS · MD (Homoeopathy) · PGDCR
             </p>
 
@@ -105,31 +101,30 @@ export default function AboutDoctor() {
             </div>
 
             {/* Bio paragraphs */}
-            <p className="mt-8 text-base leading-relaxed text-text-secondary sm:text-lg">
-              Dr. Aditi A. Wad is not just a homoeopathic physician — she is a
+            <p className="mt-8 text-base leading-relaxed text-text-secondary sm:text-lg text-justify">
+              Dr. Aditi A. Wad is not just a Homoeopathic Physician, She is a
               healer who listens. With over a decade of clinical experience and
               an MD in Homoeopathy, Dr. Wad brings together deep academic
               expertise and genuine compassion to every consultation. She founded
-              Dr. Wad&apos;s Synergy Homoeopathic Clinic in Rahatani, Pune, with
+              Dr Wad&apos;s synergy Homeopathy clinic in Rahatani, Pune, with
               a simple but powerful belief: every patient deserves a treatment as
               unique as they are.
             </p>
 
-            <p className="mt-4 text-base leading-relaxed text-text-secondary sm:text-lg">
-              Her approach is rooted in classical homoeopathy — understanding not
-              just your symptoms, but your story. Your lifestyle, your stress,
-              your sleep, your diet, your emotional well-being — every detail
-              matters.
+            <p className="mt-4 text-base leading-relaxed text-text-secondary sm:text-lg text-justify">
+              Her approach is rooted in classical Homoeopathy understanding not
+              just your symptoms, but your life history, your lifestyle, your stress,
+              your sleep, your diet, your emotional well-being every detail matters.
             </p>
 
             {/* Quote */}
-            <blockquote className="mt-8 border-l-4 border-primary py-3 pl-6">
-              <p className="font-serif text-lg italic text-slate-700 sm:text-xl">
+            <blockquote className="mt-8 border-l-4 border-primary bg-primary/5 rounded-r-2xl py-6 pl-8 pr-6 shadow-sm">
+              <p className="font-serif text-xl italic font-medium text-primary-dark sm:text-2xl text-justify leading-snug">
                 &ldquo;I don&apos;t treat diseases. I treat people. When we
                 understand the person behind the symptoms, real healing
                 begins.&rdquo;
               </p>
-              <footer className="mt-2 text-sm font-semibold text-primary">
+              <footer className="mt-4 text-base font-bold text-primary tracking-wide">
                 — Dr. Aditi A. Wad
               </footer>
             </blockquote>
@@ -137,7 +132,7 @@ export default function AboutDoctor() {
             {/* CTA */}
             <div className="mt-10">
               <a
-                href="https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                href="https://wa.me/917798756622?text=Hi%20Dr.%20Wad%2C%20I%20would%20like%20to%20book%20a%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Book a consultation with Dr. Aditi Wad via WhatsApp"

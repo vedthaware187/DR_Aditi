@@ -44,7 +44,7 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-20 w-full">
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-8 items-center">
-          {/* Left Column - Text Content (60%) */}
+          {/* Left Column Text Content (60%) */}
           <motion.div
             className="lg:col-span-3 space-y-6 md:space-y-8"
             variants={containerVariants}
@@ -73,8 +73,8 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="text-lg md:text-xl text-text-secondary max-w-xl leading-relaxed"
             >
-              Expert homoeopathic treatment by Dr. Aditi A. Wad — BHMS,
-              MD(Hom), PGDCR — helping families across Pune find lasting
+              Expert Homoeopathic treatment by Dr. Aditi A. Wad BHMS,
+              MD(Hom), PGDCR helping families across Pune find lasting
               relief, naturally and safely.
             </motion.p>
 
@@ -90,7 +90,7 @@ export default function Hero() {
                 Book Appointment
               </a>
               <a
-                href="https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad!%20I%27d%20like%20to%20book%20an%20appointment."
+                href="https://wa.me/917798756622?text=Hi%20Dr.%20Wad!%20I%27d%20like%20to%20book%20an%20appointment."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-primary font-semibold text-base border-2 border-primary/20 hover:border-primary hover:bg-primary/5 hover:scale-105 transition-all duration-200"
@@ -118,7 +118,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Visual (40%) */}
+          {/* Right Column Visual (40%) */}
           <motion.div
             className="lg:col-span-2 flex items-center justify-center relative"
             initial={{ opacity: 0, scale: 0.8 }}

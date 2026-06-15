@@ -22,7 +22,7 @@ const features: Feature[] = [
     icon: FaUserMd,
     title: "MD-Qualified Expertise",
     description:
-      "Dr. Wad holds an MD in Homoeopathy and PGDCR — qualifications that fewer than 5% of homoeopathic practitioners in Pune possess.",
+      "Dr. Wad holds an MD in Homoeopathy and PGDCR qualifications that fewer than 5% of Homoeopathic practitioners in Pune possess.",
   },
   {
     icon: FaUsers,
@@ -38,7 +38,7 @@ const features: Feature[] = [
   },
   {
     icon: FaHospital,
-    title: "Modern, Welcoming Clinic",
+    title: "Modern Welcoming Clinic",
     description:
       "A clean, technology-enabled clinic in Rahatani that respects both your time and your comfort.",
   },
@@ -68,13 +68,13 @@ export default function WhyChooseUs() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-primary-dark sm:text-4xl lg:text-5xl">
             Why Families Across Pune{" "}
             <span className="gradient-text">Trust Dr. Wad</span>
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-primary" />
-          <p className="mt-6 text-lg leading-relaxed text-text-secondary">
-            Over 2,000 patients — from Rahatani to across Pune — have chosen
+          <p className="mt-6 text-lg leading-relaxed text-text-secondary text-justify">
+            Over 2,000 patients from Rahatani to across Pune have chosen
             Synergy Clinic.
           </p>
         </motion.div>
@@ -108,10 +108,10 @@ export default function WhyChooseUs() {
                     !isEven ? "lg:text-right" : ""
                   }`}
                 >
-                  <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">
+                  <h3 className="text-xl font-semibold text-primary-dark sm:text-2xl">
                     {feature.title}
                   </h3>
-                  <p className="mt-2 max-w-lg text-text-secondary leading-relaxed">
+                  <p className="mt-2 max-w-lg text-text-secondary leading-relaxed text-justify">
                     {feature.description}
                   </p>
                 </div>
@@ -129,12 +129,13 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <a
-            href="https://wa.me/919XXXXXXXXX?text=Hi%20Dr.%20Wad%2C%20I%20would%20like%20to%20visit%20the%20clinic."
+            href="https://maps.google.com/maps?q=Dr.Wad%27s+Synergy+Homoeopathic+Clinic+Fortuna+Business+Center"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Visit Synergy Clinic — book via WhatsApp"
+            aria-label="Visit Synergy Clinic on Google Maps"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-dark hover:shadow-xl hover:shadow-primary/30"
           >
+            <FaMapMarkerAlt className="text-xl" />
             Visit Synergy Clinic
           </a>
         </motion.div>

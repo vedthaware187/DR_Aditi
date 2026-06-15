@@ -114,11 +114,11 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-dark mb-4">
             Real Patients.{" "}
             <span className="gradient-text">Real Results.</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto text-justify">
             Hear from families who found lasting relief at Synergy Clinic.
           </p>
         </motion.div>
@@ -174,7 +174,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <p className="text-lg italic text-foreground leading-relaxed mb-6">
+                <p className="text-lg italic text-foreground leading-relaxed mb-6 text-justify">
                   &ldquo;{current.quote}&rdquo;
                 </p>
 
@@ -185,10 +185,10 @@ export default function Testimonials() {
                     {current.name.charAt(0)}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-foreground">
+                    <p className="font-semibold text-foreground text-justify">
                       {current.name}
                     </p>
-                    <p className="text-text-secondary text-sm">
+                    <p className="text-text-secondary text-sm text-justify">
                       {current.location}
                     </p>
                   </div>
