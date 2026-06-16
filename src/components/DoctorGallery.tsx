@@ -15,7 +15,7 @@ const galleryImages: GalleryImage[] = [
     src: "/gallery-1.png",
     alt: "Clinic inauguration with traditional pooja ceremony",
     caption: "Blessed Beginnings",
-    span: "wide",
+    span: "large",
   },
   {
     src: "/gallery-2.png",
@@ -75,7 +75,13 @@ const galleryImages: GalleryImage[] = [
     src: "/gallery-11.jpeg",
     alt: "Dedicated attention to patient health",
     caption: "Dedicated Attention",
-    span: "wide",
+    span: "large",
+  },
+  {
+    src: "/logo.png",
+    alt: "Synergy Clinic Logo",
+    caption: "Synergy Clinic",
+    span: "normal",
   },
 ];
 
@@ -136,6 +142,8 @@ export default function DoctorGallery() {
               spanClass = "sm:col-span-2";
             } else if (image.span === "tall") {
               spanClass = "row-span-2";
+            } else if (image.span === "large") {
+              spanClass = "sm:col-span-2 row-span-2";
             }
 
             return (
@@ -149,7 +157,9 @@ export default function DoctorGallery() {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className={`${
+                    image.src.includes('logo') ? 'object-contain p-6 bg-white' : 'object-cover'
+                  } transition-transform duration-700 group-hover:scale-110`}
                   sizes={
                     image.span === "wide"
                       ? "(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 66vw"
