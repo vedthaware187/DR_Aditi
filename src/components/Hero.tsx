@@ -63,9 +63,9 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
             >
-              <span className="text-foreground">Gentle Healing.</span>
+              <span className="text-foreground">Healing in Harmony.</span>
               <br />
-              <span className="gradient-text">Lasting Results.</span>
+              <span className="gradient-text">Wellness for Life.</span>
             </motion.h1>
 
             {/* Subheadline */}

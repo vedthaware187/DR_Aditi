@@ -119,7 +119,7 @@ export default function FAQ() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className={`bg-white rounded-xl mb-3 overflow-hidden shadow-sm transition-all duration-300 ${
+                className={`bg-white dark:bg-slate-800 rounded-xl mb-3 overflow-hidden shadow-sm transition-all duration-300 ${
                   isOpen ? "border-l-4 border-primary" : "border-l-4 border-transparent"
                 }`}
               >

@@ -12,34 +12,52 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   {
-    src: "/clinicimage1.jpeg",
-    alt: "Homoeopathic Medicines at Synergy Clinic",
-    caption: "Natural Healing at Synergy Clinic",
+    src: "/gallery-1.png",
+    alt: "Clinic inauguration with traditional pooja ceremony",
+    caption: "Blessed Beginnings",
     span: "wide",
   },
   {
-    src: "/clinicimage2.jpeg",
-    alt: "Dr. Aditi Wad receiving an award",
+    src: "/gallery-2.png",
+    alt: "Medical Certifications and Clinic Wall",
+    caption: "Certified Expertise",
+    span: "tall",
+  },
+  {
+    src: "/gallery-3.png",
+    alt: "Dr. Aditi Wad felicitated at a medical event",
     caption: "Recognized for Excellence",
+    span: "normal",
+  },
+  {
+    src: "/gallery-4.png",
+    alt: "Patient Success Story - Before & After",
+    caption: "Transformative Care",
     span: "tall",
   },
   {
-    src: "/felicitation-ceremony.jpeg",
-    alt: "Dr. Aditi Wad being felicitated at a medical conference",
-    caption: "Felicitated at Medical Conference",
+    src: "/gallery-5.png",
+    alt: "Homoeopathic Medicines Inventory",
+    caption: "Authentic Remedies",
+    span: "normal",
+  },
+  {
+    src: "/gallery-6.png",
+    alt: "Dr. Aditi Wad treating a patient",
+    caption: "Personalized Patient Care",
+    span: "wide",
+  },
+  {
+    src: "/gallery-7.png",
+    alt: "Dr. Aditi Wad consulting",
+    caption: "Expert Consultation",
     span: "tall",
   },
   {
-    src: "/conference-group.jpeg",
-    alt: "Dr. Aditi Wad with colleagues at a national medical seminar",
-    caption: "MHFDA Pimpri-Chinchwad Team Seminar",
-    span: "wide",
-  },
-  {
-    src: "/colleagues-conference.jpeg",
-    alt: "Dr. Aditi Wad with fellow practitioners at a conference",
-    caption: "With Colleagues at National Conference",
-    span: "wide",
+    src: "/gallery-8.png",
+    alt: "Clinic Environment",
+    caption: "Modern Welcoming Clinic",
+    span: "tall",
   },
 ];
 
@@ -93,16 +111,11 @@ export default function DoctorGallery() {
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
         >
-          {galleryImages.map((image, index) => {
+          {galleryImages.map((image) => {
             // Determine grid span classes
             let spanClass = "";
             if (image.span === "wide") {
-              // First wide image spans 2 cols on lg
-              if (index === 0) {
-                spanClass = "lg:col-span-2";
-              }
-            } else if (image.span === "tall") {
-              spanClass = "row-span-1 sm:row-span-1";
+              spanClass = "lg:col-span-2";
             }
 
             return (

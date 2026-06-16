@@ -124,14 +124,14 @@ export default function AppointmentForm() {
     const messageLines = [
       "Hello Dr. Wad, I would like to book an appointment.",
       "",
-      `*Name:* ${formData.name}`,
-      `*Phone:* ${formData.phone}`,
-      formData.email ? `*Email:* ${formData.email}` : "",
-      `*Condition:* ${formData.condition}`,
-      `*Preferred Date:* ${formData.date}`,
-      `*Preferred Time:* ${getTimeLabelForValue(formData.time)}`,
-      formData.message ? `*Message:* ${formData.message}` : ""
-    ].filter(Boolean).join("\\n");
+      `Name: ${formData.name}`,
+      `Phone: ${formData.phone}`,
+      formData.email ? `Email: ${formData.email}` : "",
+      `Condition: ${formData.condition}`,
+      `Preferred Date: ${formData.date}`,
+      `Preferred Time: ${getTimeLabelForValue(formData.time)}`,
+      formData.message ? `Message: ${formData.message}` : ""
+    ].filter(Boolean).join("\n");
 
     const whatsappUrl = `https://wa.me/917798756622?text=${encodeURIComponent(messageLines)}`;
     
@@ -190,7 +190,7 @@ export default function AppointmentForm() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-3"
           >
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 md:p-8">
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
                   <motion.form
@@ -556,8 +556,8 @@ export default function AppointmentForm() {
               <h4 className="font-semibold text-lg mb-3">What to bring:</h4>
               <ul className="space-y-2 mb-6">
                 {[
-                  "Previous medical reports",
-                  "List of current medications",
+                  "Investigations done prior (if any)",
+                  "Prescription of Current ongoing medications (if any)",
                   "Recent blood work (if any)",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-white/90">

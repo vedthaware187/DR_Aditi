@@ -67,7 +67,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="font-serif text-lg text-gray-300 italic text-justify">
-              Gentle Healing. Lasting Results.
+              Healing in Harmony. Wellness for Life.
             </p>
             <p className="text-gray-400 text-sm leading-relaxed text-justify">
               Trusted Homoeopathic care for families across Pune. Personalized,

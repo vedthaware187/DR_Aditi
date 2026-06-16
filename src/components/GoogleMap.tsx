@@ -29,7 +29,7 @@ const clinicHours = [
 
 export default function GoogleMap() {
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-background transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div

@@ -23,7 +23,7 @@ const credentials = [
 
 export default function AboutDoctor() {
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-background transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.div
