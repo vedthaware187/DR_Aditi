@@ -67,7 +67,7 @@ export default function StickyButtons() {
       </AnimatePresence>
 
       {/* Mobile Sticky Bottom Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-slate-800 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] border-t border-gray-100">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.08)] border-t border-gray-100">
         <div className="grid grid-cols-3 h-16">
           {/* Call */}
           <a

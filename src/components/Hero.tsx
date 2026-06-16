@@ -63,10 +63,16 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
             >
-              <span className="text-foreground">Healing in Harmony.</span>
+              <span className="text-primary-dark">Synergy</span>
               <br />
-              <span className="gradient-text">Wellness for Life.</span>
+              <span className="gradient-text">Clinic</span>
             </motion.h1>
+
+            <motion.div variants={fadeUpVariants} className="mt-6 mb-2">
+              <span className="text-xl md:text-2xl font-bold text-primary font-serif">
+                &quot;Healing in Harmony Wellness for Life&quot;
+              </span>
+            </motion.div>
 
             {/* Subheadline */}
             <motion.p

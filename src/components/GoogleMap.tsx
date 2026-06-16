@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 const MAPS_EMBED_SRC =
-  "https://maps.google.com/maps?q=Dr.Wad%27s+Synergy+Homoeopathic+Clinic+Fortuna+Business+Center&t=&z=15&ie=UTF8&iwloc=&output=embed";
+  "https://maps.google.com/maps?q=Fortuna+Business+Center,+Pimple+Saudagar,+Pune&t=&z=15&ie=UTF8&iwloc=B&output=embed";
 
 const GOOGLE_MAPS_DIRECTIONS =
   "https://www.google.com/maps/dir/?api=1&destination=Fortuna+Business+Center,+Pimple+Saudagar,+Pune";

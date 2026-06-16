@@ -190,7 +190,7 @@ export default function AppointmentForm() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-3"
           >
-            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 md:p-8">
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
                   <motion.form

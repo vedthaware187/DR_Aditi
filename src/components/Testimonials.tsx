@@ -133,7 +133,7 @@ export default function Testimonials() {
           <button
             onClick={goToPrev}
             aria-label="Previous testimonial"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-14 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-14 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer"
           >
             <FaChevronLeft className="w-4 h-4" />
           </button>
@@ -142,7 +142,7 @@ export default function Testimonials() {
           <button
             onClick={goToNext}
             aria-label="Next testimonial"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-14 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-14 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer"
           >
             <FaChevronRight className="w-4 h-4" />
           </button>

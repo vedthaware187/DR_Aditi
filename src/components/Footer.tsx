@@ -66,8 +66,8 @@ export default function Footer() {
                 Dr Wad&apos;s synergy Homeopathy clinic
               </span>
             </a>
-            <p className="font-serif text-lg text-gray-300 italic text-justify">
-              Healing in Harmony. Wellness for Life.
+            <p className="font-serif text-lg text-primary font-bold italic text-justify">
+              &quot;Healing in Harmony Wellness for Life&quot;
             </p>
             <p className="text-gray-400 text-sm leading-relaxed text-justify">
               Trusted Homoeopathic care for families across Pune. Personalized,

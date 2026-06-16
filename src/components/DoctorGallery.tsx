@@ -33,13 +33,13 @@ const galleryImages: GalleryImage[] = [
     src: "/gallery-4.png",
     alt: "Patient Success Story - Before & After",
     caption: "Transformative Care",
-    span: "tall",
+    span: "normal",
   },
   {
     src: "/gallery-5.png",
     alt: "Homoeopathic Medicines Inventory",
     caption: "Authentic Remedies",
-    span: "normal",
+    span: "wide",
   },
   {
     src: "/gallery-6.png",
@@ -51,13 +51,31 @@ const galleryImages: GalleryImage[] = [
     src: "/gallery-7.png",
     alt: "Dr. Aditi Wad consulting",
     caption: "Expert Consultation",
-    span: "tall",
+    span: "wide",
   },
   {
     src: "/gallery-8.png",
     alt: "Clinic Environment",
     caption: "Modern Welcoming Clinic",
     span: "tall",
+  },
+  {
+    src: "/gallery-9.jpeg",
+    alt: "Dr. Aditi Wad interacting with a patient",
+    caption: "Compassionate Care",
+    span: "tall",
+  },
+  {
+    src: "/gallery-10.png",
+    alt: "Homoeopathic treatment session",
+    caption: "Holistic Treatment",
+    span: "tall",
+  },
+  {
+    src: "/gallery-11.jpeg",
+    alt: "Dedicated attention to patient health",
+    caption: "Dedicated Attention",
+    span: "wide",
   },
 ];
 
@@ -105,7 +123,7 @@ export default function DoctorGallery() {
 
         {/* Gallery Grid */}
         <motion.div
-          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[240px] sm:auto-rows-[280px]"
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] grid-flow-dense"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -115,7 +133,9 @@ export default function DoctorGallery() {
             // Determine grid span classes
             let spanClass = "";
             if (image.span === "wide") {
-              spanClass = "lg:col-span-2";
+              spanClass = "sm:col-span-2";
+            } else if (image.span === "tall") {
+              spanClass = "row-span-2";
             }
 
             return (
