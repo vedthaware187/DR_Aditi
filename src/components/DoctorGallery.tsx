@@ -7,7 +7,7 @@ interface GalleryImage {
   src: string;
   alt: string;
   caption: string;
-  span: "tall" | "wide" | "normal";
+  span: "tall" | "wide" | "normal" | "large";
 }
 
 const galleryImages: GalleryImage[] = [
