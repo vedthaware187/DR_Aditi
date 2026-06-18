@@ -69,8 +69,8 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="font-serif text-xl font-bold text-foreground">
-                Dr Wad&apos;s <span className="gradient-text">synergy Homeopathy clinic</span>
+              <span className="font-serif text-xl sm:text-2xl lg:text-3xl font-bold text-primary-dark tracking-tight">
+                Dr.Wad&apos;S Synergy Homeopathic Clinic
               </span>
             </a>
 

@@ -62,8 +62,8 @@ export default function Footer() {
                   sizes="40px"
                 />
               </div>
-              <span className="font-serif text-xl font-bold text-white">
-                Dr Wad&apos;s synergy Homeopathy clinic
+              <span className="font-serif text-2xl lg:text-3xl font-bold text-white tracking-tight">
+                Dr.Wad&apos;S Synergy Homeopathic Clinic
               </span>
             </a>
             <p className="font-serif text-lg text-primary font-bold italic text-justify">

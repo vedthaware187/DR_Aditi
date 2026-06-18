@@ -18,12 +18,6 @@ const galleryImages: GalleryImage[] = [
     span: "large",
   },
   {
-    src: "/gallery-2.png",
-    alt: "Medical Certifications and Clinic Wall",
-    caption: "Certified Expertise",
-    span: "tall",
-  },
-  {
     src: "/gallery-3.png",
     alt: "Dr. Aditi Wad felicitated at a medical event",
     caption: "Recognized for Excellence",

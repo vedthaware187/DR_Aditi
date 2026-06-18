@@ -61,11 +61,9 @@ export default function Hero() {
             {/* Headline */}
             <motion.h1
               variants={fadeUpVariants}
-              className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-primary-dark"
             >
-              <span className="text-primary-dark">Synergy</span>
-              <br />
-              <span className="gradient-text">Clinic</span>
+              Dr.Wad&apos;S Synergy Homeopathic Clinic
             </motion.h1>
 
             <motion.div variants={fadeUpVariants} className="mt-6 mb-2">
