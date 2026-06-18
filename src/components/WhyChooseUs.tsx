@@ -40,7 +40,7 @@ const features: Feature[] = [
     icon: FaHospital,
     title: "Modern Welcoming Clinic",
     description:
-      "A clean, technology-enabled clinic in Rahatani that respects both your time and your comfort.",
+      "A clean, technology-enabled clinic in Pimple Saudagar that respects both your time and your comfort.",
   },
   {
     icon: FaChartLine,
@@ -52,7 +52,7 @@ const features: Feature[] = [
     icon: FaMapMarkerAlt,
     title: "Conveniently Located",
     description:
-      "In the heart of Rahatani, accessible from Pimple Saudagar, Wakad, Aundh & Hinjewadi. Ample parking.",
+      "In the heart of Pimple Saudagar, accessible from Rahatani, Wakad, Aundh & Hinjewadi. Ample parking.",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-primary" />
           <p className="mt-6 text-lg leading-relaxed text-text-secondary text-justify">
-            Over 2,000 patients from Rahatani to across Pune have chosen
+            Over 2,000 patients from Pimple Saudagar to across Pune have chosen
             Synergy Clinic.
           </p>
         </motion.div>

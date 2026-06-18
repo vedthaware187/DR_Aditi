@@ -106,7 +106,7 @@ export default function AboutDoctor() {
               healer who listens. With over a decade of clinical experience and
               an MD in Homoeopathy, Dr. Wad brings together deep academic
               expertise and genuine compassion to every consultation. She founded
-              Dr Wad&apos;s synergy Homeopathy clinic in Rahatani, Pune, with
+              Dr Wad&apos;s synergy Homeopathy clinic in Pimple Saudagar, Pune, with
               a simple but powerful belief: every patient deserves a treatment as
               unique as they are.
             </p>

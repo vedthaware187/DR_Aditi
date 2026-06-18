@@ -39,7 +39,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Rahul T.",
-    location: "Rahatani",
+    location: "Pimple Saudagar",
     condition: "Psoriasis",
     rating: 5,
     quote:

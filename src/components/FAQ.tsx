@@ -43,7 +43,7 @@ const faqItems: FAQItem[] = [
   {
     question: "How are follow-up consultations handled?",
     answer:
-      "Follow-ups are every 3\u20136 weeks, either in-person at our Rahatani clinic or via WhatsApp for minor updates. This flexibility ensures treatment stays on track even if you\u2019re busy or traveling.",
+      "Follow-ups are every 3\u20136 weeks, either in-person at our Pimple Saudagar clinic or via WhatsApp for minor updates. This flexibility ensures treatment stays on track even if you\u2019re busy or traveling.",
   },
   {
     question: "What if Homoeopathy doesn\u2019t work for me?",
